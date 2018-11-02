@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblDashBoard = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.prog = new System.Windows.Forms.ProgressBar();
             this.pic = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -62,23 +61,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.prog);
             this.panel2.Controls.Add(this.pic);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 43);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(525, 257);
             this.panel2.TabIndex = 2;
-            // 
-            // prog
-            // 
-            this.prog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.prog.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.prog.Location = new System.Drawing.Point(0, 252);
-            this.prog.Name = "prog";
-            this.prog.Size = new System.Drawing.Size(525, 5);
-            this.prog.Step = 100;
-            this.prog.TabIndex = 1;
             // 
             // pic
             // 
@@ -112,6 +100,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblDashBoard;
-        internal System.Windows.Forms.ProgressBar prog;
     }
 }

@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using Contact.Model;
 
 namespace Contact
 {
@@ -11,6 +12,10 @@ namespace Contact
     {
         const int WM_NCLBUTTONDOWN = 0xA1;
         const int HT_CAPTION = 0x2;  //this indicates that the action takes place on the title bar
+
+        const int MOUSEEVENTF_LEFTDOWN = 0X02;
+        const int MOUSEEVENTF_LEFTUP = 0X04;
+
         ControlAdder ctrl = ControlAdder.Instance;
         public frmMain()
         {
@@ -19,15 +24,14 @@ namespace Contact
             this.pnlHeader.MouseDown += move_window; // binding the method to the event
             this.txtCaption.MouseDown += move_window;
             this.pnlSearchContainer.MouseDown += move_window;
-            //this.picSearch.MouseDown += move_window;
             this.picUserIcon.MouseDown += move_window;
-            //this.lblUserName.MouseDown += move_window;
             PaintLink();
             ctrl.MenuContainer = pnlMenu;
             ctrl.btnHome = btnHome;
             ctrl.btnContacts = btnContact;
             ctrl.btnNewContact = btnAddNew;
             ctrl.btnNewGroup = btnNewGroup;
+            lblUserName.Text = User.Name;
         }
 
         private void frmMain_Shown(object sender, EventArgs e)
@@ -60,6 +64,7 @@ namespace Contact
 
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
+
         #endregion
 
         #region Link Painter
@@ -133,6 +138,7 @@ namespace Contact
             ctrl.Add(ref pnlCtrlContainer, Feature.NewContact);
             ControlAdder.ctrlNewContact.lblHeader.Text = "New Contact";
             ControlAdder.ctrlNewContact.Init();
+            ControlAdder.ctrlNewContact.LoadGroup();
         }
 
         private void btnNewGroup_Click(object sender, EventArgs e)

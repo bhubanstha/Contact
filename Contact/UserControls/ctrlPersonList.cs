@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Contact.CRUD;
 using System.IO;
+using AnimatorNS;
 
 namespace Contact.UserControls
 {

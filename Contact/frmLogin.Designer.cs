@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pnlLogin = new System.Windows.Forms.Panel();
+            this.lblResetPassword = new System.Windows.Forms.LinkLabel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtpassword = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +48,7 @@
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.Red;
             this.pnlLogin.BackgroundImage = global::Contact.Properties.Resources.whiteBG;
+            this.pnlLogin.Controls.Add(this.lblResetPassword);
             this.pnlLogin.Controls.Add(this.btnLogin);
             this.pnlLogin.Controls.Add(this.txtpassword);
             this.pnlLogin.Controls.Add(this.label3);
@@ -57,6 +59,19 @@
             this.pnlLogin.Name = "pnlLogin";
             this.pnlLogin.Size = new System.Drawing.Size(320, 260);
             this.pnlLogin.TabIndex = 0;
+            // 
+            // lblResetPassword
+            // 
+            this.lblResetPassword.AutoSize = true;
+            this.lblResetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblResetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResetPassword.Location = new System.Drawing.Point(21, 224);
+            this.lblResetPassword.Name = "lblResetPassword";
+            this.lblResetPassword.Size = new System.Drawing.Size(129, 20);
+            this.lblResetPassword.TabIndex = 6;
+            this.lblResetPassword.TabStop = true;
+            this.lblResetPassword.Text = "Forget Password";
+            this.lblResetPassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblResetPassword_LinkClicked);
             // 
             // btnLogin
             // 
@@ -145,12 +160,12 @@
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(320, 60);
             this.label1.TabIndex = 0;
-            this.label1.Text = "User Login";
+            this.label1.Text = "Sign In";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmLogin
@@ -189,5 +204,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picClose;
+        private System.Windows.Forms.LinkLabel lblResetPassword;
     }
 }

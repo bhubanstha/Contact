@@ -33,7 +33,7 @@
             this.picProfile = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.LinkLabel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblPhone = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,7 +62,7 @@
             this.lblName.ForeColor = System.Drawing.Color.Orange;
             this.lblName.Location = new System.Drawing.Point(0, 223);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(288, 32);
+            this.lblName.Size = new System.Drawing.Size(268, 32);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Mr. Bhuban Shrestha ";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -73,13 +73,13 @@
             this.btnViewDetail.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnViewDetail.FlatAppearance.BorderColor = System.Drawing.Color.Green;
             this.btnViewDetail.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Green;
-            this.btnViewDetail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnViewDetail.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnViewDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewDetail.ForeColor = System.Drawing.Color.White;
             this.btnViewDetail.Location = new System.Drawing.Point(0, 331);
             this.btnViewDetail.Name = "btnViewDetail";
-            this.btnViewDetail.Size = new System.Drawing.Size(288, 38);
+            this.btnViewDetail.Size = new System.Drawing.Size(268, 38);
             this.btnViewDetail.TabIndex = 5;
             this.btnViewDetail.Text = "View Detail";
             this.btnViewDetail.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             this.picProfile.Image = global::Contact.Properties.Resources.photo;
             this.picProfile.Location = new System.Drawing.Point(0, 0);
             this.picProfile.Name = "picProfile";
-            this.picProfile.Size = new System.Drawing.Size(288, 223);
+            this.picProfile.Size = new System.Drawing.Size(268, 223);
             this.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picProfile.TabIndex = 0;
             this.picProfile.TabStop = false;
@@ -105,7 +105,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 255);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(288, 76);
+            this.panel1.Size = new System.Drawing.Size(268, 76);
             this.panel1.TabIndex = 6;
             // 
             // panel5
@@ -114,7 +114,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(32, 50);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(256, 25);
+            this.panel5.Size = new System.Drawing.Size(236, 25);
             this.panel5.TabIndex = 3;
             // 
             // lblAddress
@@ -123,8 +123,9 @@
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.Location = new System.Drawing.Point(0, 0);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(256, 25);
+            this.lblAddress.Size = new System.Drawing.Size(236, 25);
             this.lblAddress.TabIndex = 1;
+            this.lblAddress.TabStop = true;
             this.lblAddress.Text = "Balaju, Kathmandu, Nepal";
             this.lblAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblAddress.Click += new System.EventHandler(this.OpenMap);
@@ -135,7 +136,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(32, 25);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(256, 25);
+            this.panel4.Size = new System.Drawing.Size(236, 25);
             this.panel4.TabIndex = 2;
             // 
             // lblPhone
@@ -144,7 +145,7 @@
             this.lblPhone.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhone.Location = new System.Drawing.Point(0, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(256, 25);
+            this.lblPhone.Size = new System.Drawing.Size(236, 25);
             this.lblPhone.TabIndex = 1;
             this.lblPhone.Text = "54875422";
             this.lblPhone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -155,7 +156,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(32, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(256, 25);
+            this.panel3.Size = new System.Drawing.Size(236, 25);
             this.panel3.TabIndex = 1;
             // 
             // lblEmail
@@ -164,7 +165,7 @@
             this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(0, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(256, 25);
+            this.lblEmail.Size = new System.Drawing.Size(236, 25);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "bhuban@gmail.com";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,7 +220,7 @@
             // 
             this.picDelete.BackColor = System.Drawing.Color.Black;
             this.picDelete.Image = global::Contact.Properties.Resources.close;
-            this.picDelete.Location = new System.Drawing.Point(263, -1);
+            this.picDelete.Location = new System.Drawing.Point(242, -1);
             this.picDelete.Name = "picDelete";
             this.picDelete.Size = new System.Drawing.Size(25, 25);
             this.picDelete.TabIndex = 7;
@@ -240,7 +241,7 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.picProfile);
             this.Name = "ctrlPerson";
-            this.Size = new System.Drawing.Size(288, 369);
+            this.Size = new System.Drawing.Size(268, 369);
             this.Load += new System.EventHandler(this.ctrlPerson_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -263,7 +264,7 @@
         private System.Windows.Forms.Button btnViewDetail;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.LinkLabel lblAddress;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Panel panel3;

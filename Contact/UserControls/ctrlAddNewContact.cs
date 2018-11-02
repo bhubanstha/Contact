@@ -197,10 +197,16 @@ namespace Contact.UserControls
         }
         private void ctrlAddNewContact_Load(object sender, EventArgs e)
         {
+            LoadGroup();
+        }
+
+        public void LoadGroup()
+        {
             DataTable tbl = gc.GetAllGroup();
-            ddlGroup.DataSource = tbl;
             ddlGroup.ValueMember = "Id";
             ddlGroup.DisplayMember = "Name";
+            ddlGroup.DataSource = tbl;
         }
+        
     }
 }

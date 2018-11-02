@@ -30,5 +30,6 @@ namespace Contact.CRUD
             cmd.Parameters.AddWithValue("@Name", userName);
             return DataAccess.ExecuteReaderCommand(cmd);
         }
+
     }
 }

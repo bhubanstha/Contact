@@ -283,7 +283,7 @@
             // picDeveloper
             // 
             this.picDeveloper.Dock = System.Windows.Forms.DockStyle.Left;
-            this.picDeveloper.Image = global::Contact.Properties.Resources.subash;
+            this.picDeveloper.Image = global::Contact.Properties.Resources._2bbujtW__400x400;
             this.picDeveloper.Location = new System.Drawing.Point(0, 0);
             this.picDeveloper.Name = "picDeveloper";
             this.picDeveloper.Size = new System.Drawing.Size(75, 71);
@@ -338,6 +338,7 @@
             // pnlCtrlContainer
             // 
             this.pnlCtrlContainer.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlCtrlContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlCtrlContainer.Controls.Add(this.pnlOptions);
             this.pnlCtrlContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCtrlContainer.Location = new System.Drawing.Point(0, 0);
@@ -354,12 +355,13 @@
             this.pnlOptions.Controls.Add(this.btnLogout);
             this.pnlOptions.Controls.Add(this.btnProfile);
             this.pnlOptions.Controls.Add(this.btnChangePassword);
-            this.pnlOptions.Location = new System.Drawing.Point(337, 0);
+            this.pnlOptions.Location = new System.Drawing.Point(335, 0);
             this.pnlOptions.Name = "pnlOptions";
             this.pnlOptions.Padding = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.pnlOptions.Size = new System.Drawing.Size(185, 101);
             this.pnlOptions.TabIndex = 1;
             this.pnlOptions.Visible = false;
+            this.pnlOptions.Leave += new System.EventHandler(this.pnlOptions_MouseLeave);
             this.pnlOptions.MouseLeave += new System.EventHandler(this.pnlOptions_MouseLeave);
             // 
             // btnLogout

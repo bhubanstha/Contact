@@ -147,15 +147,16 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.BackgroundImage = global::Contact.Properties.Resources.edit;
+            this.btnEdit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEdit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Image = global::Contact.Properties.Resources.edit;
-            this.btnEdit.Location = new System.Drawing.Point(796, 0);
+            this.btnEdit.Location = new System.Drawing.Point(801, 5);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(42, 43);
+            this.btnEdit.Size = new System.Drawing.Size(32, 32);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.UseVisualStyleBackColor = true;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);

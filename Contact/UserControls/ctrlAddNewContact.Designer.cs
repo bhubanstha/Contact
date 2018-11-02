@@ -320,15 +320,16 @@
             // 
             // btnSave
             // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackgroundImage = global::Contact.Properties.Resources.save;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Image = global::Contact.Properties.Resources.save;
-            this.btnSave.Location = new System.Drawing.Point(733, 0);
+            this.btnSave.Location = new System.Drawing.Point(745, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(49, 43);
+            this.btnSave.Size = new System.Drawing.Size(32, 32);
             this.btnSave.TabIndex = 1;
             this.btnSave.TabStop = false;
             this.btnSave.UseVisualStyleBackColor = true;

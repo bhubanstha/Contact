@@ -31,35 +31,36 @@
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.picProfile = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblMobile2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblBirthday = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.lblMobile = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picProfile = new System.Windows.Forms.PictureBox();
+            this.lblAddress = new System.Windows.Forms.LinkLabel();
             this.pnlHeader.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlHeader
@@ -93,17 +94,6 @@
             this.panel2.Size = new System.Drawing.Size(200, 438);
             this.panel2.TabIndex = 1;
             // 
-            // picProfile
-            // 
-            this.picProfile.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picProfile.Image = global::Contact.Properties.Resources.subash;
-            this.picProfile.Location = new System.Drawing.Point(0, 5);
-            this.picProfile.Name = "picProfile";
-            this.picProfile.Size = new System.Drawing.Size(200, 195);
-            this.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picProfile.TabIndex = 5;
-            this.picProfile.TabStop = false;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Orange;
@@ -134,16 +124,16 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.lblAddress);
+            this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.lblMobile2);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblBirthday);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.lblAddress);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.lblMobile);
             this.panel1.Controls.Add(this.lblEmail);
@@ -154,51 +144,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(624, 200);
             this.panel1.TabIndex = 39;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Contact.Properties.Resources.calendar;
-            this.pictureBox5.Location = new System.Drawing.Point(3, 133);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox5.TabIndex = 44;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Contact.Properties.Resources.address;
-            this.pictureBox4.Location = new System.Drawing.Point(3, 100);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox4.TabIndex = 43;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.lblAddress_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Contact.Properties.Resources.phone;
-            this.pictureBox2.Location = new System.Drawing.Point(3, 67);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox2.TabIndex = 41;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Contact.Properties.Resources.email;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
-            this.pictureBox1.TabIndex = 40;
-            this.pictureBox1.TabStop = false;
-            // 
-            // lblMobile2
-            // 
-            this.lblMobile2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMobile2.Location = new System.Drawing.Point(386, 69);
-            this.lblMobile2.Name = "lblMobile2";
-            this.lblMobile2.Size = new System.Drawing.Size(234, 21);
-            this.lblMobile2.TabIndex = 39;
             // 
             // label2
             // 
@@ -240,17 +185,6 @@
             this.label4.TabIndex = 26;
             this.label4.Text = "Mobile";
             // 
-            // lblAddress
-            // 
-            this.lblAddress.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(123, 100);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(497, 21);
-            this.lblAddress.TabIndex = 36;
-            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
-            // 
             // label19
             // 
             this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -268,7 +202,7 @@
             this.lblMobile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMobile.Location = new System.Drawing.Point(123, 68);
             this.lblMobile.Name = "lblMobile";
-            this.lblMobile.Size = new System.Drawing.Size(242, 21);
+            this.lblMobile.Size = new System.Drawing.Size(497, 21);
             this.lblMobile.TabIndex = 34;
             // 
             // lblEmail
@@ -297,6 +231,73 @@
             this.lblName.Size = new System.Drawing.Size(242, 21);
             this.lblName.TabIndex = 32;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Contact.Properties.Resources.user_black;
+            this.pictureBox3.Location = new System.Drawing.Point(3, 5);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 45;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Contact.Properties.Resources.calendar;
+            this.pictureBox5.Location = new System.Drawing.Point(3, 133);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox5.TabIndex = 44;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Contact.Properties.Resources.address;
+            this.pictureBox4.Location = new System.Drawing.Point(3, 100);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox4.TabIndex = 43;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.lblAddress_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Contact.Properties.Resources.phone;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 67);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox2.TabIndex = 41;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Contact.Properties.Resources.email;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
+            // picProfile
+            // 
+            this.picProfile.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picProfile.Image = global::Contact.Properties.Resources._2bbujtW__400x400;
+            this.picProfile.Location = new System.Drawing.Point(0, 5);
+            this.picProfile.Name = "picProfile";
+            this.picProfile.Size = new System.Drawing.Size(200, 195);
+            this.picProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picProfile.TabIndex = 5;
+            this.picProfile.TabStop = false;
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Location = new System.Drawing.Point(127, 100);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(493, 23);
+            this.lblAddress.TabIndex = 46;
+            this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
+            // 
             // ctrlMyProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,14 +310,15 @@
             this.Size = new System.Drawing.Size(838, 481);
             this.pnlHeader.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -330,7 +332,6 @@
         private System.Windows.Forms.PictureBox picProfile;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblBirthday;
-        private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblMobile;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblName;
@@ -340,11 +341,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lblMobile2;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.LinkLabel lblAddress;
     }
 }

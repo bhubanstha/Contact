@@ -62,6 +62,10 @@ namespace Contact.UserControls
                 picProfile.Tag = "EE306F1B79D542BF9A58F6BAFDC1F556.jpg";
             }
             picProfile.Image = image;
+            if(string.IsNullOrEmpty(lblAddress.Text.Trim()))
+            {
+                lblAddress.Visible = false;
+            }
         }
 
         private void picDelete_MouseEnter(object sender, EventArgs e)
@@ -76,14 +80,18 @@ namespace Contact.UserControls
 
         private void picDelete_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(person["Id"]);
-            PersonCrud pc = new PersonCrud();
-            pc.Delete(id);
-            Control ctrl = this.ParentForm.Controls.Find("cp" + id, true).FirstOrDefault();
-            if (ctrl != null)
+            DialogResult result = MessageBox.Show("Are you sure you want to delete this contact?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
-                flowPnl.Controls.Remove(ctrl);
-                ctrl.Dispose();
+                int id = Convert.ToInt32(person["Id"]);
+                PersonCrud pc = new PersonCrud();
+                pc.Delete(id);
+                Control ctrl = this.ParentForm.Controls.Find("cp" + id, true).FirstOrDefault();
+                if (ctrl != null)
+                {
+                    flowPnl.Controls.Remove(ctrl);
+                    ctrl.Dispose();
+                }
             }
         }
     }

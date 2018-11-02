@@ -57,21 +57,22 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGroup.Location = new System.Drawing.Point(89, 30);
             this.txtGroup.Name = "txtGroup";
-            this.txtGroup.Size = new System.Drawing.Size(533, 29);
+            this.txtGroup.Size = new System.Drawing.Size(675, 29);
             this.txtGroup.TabIndex = 1;
             this.txtGroup.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtGroup_KeyUp);
             // 
             // btnSave
             // 
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.BackgroundImage = global::Contact.Properties.Resources.save;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Image = global::Contact.Properties.Resources.save;
-            this.btnSave.Location = new System.Drawing.Point(575, 0);
+            this.btnSave.Location = new System.Drawing.Point(745, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(65, 43);
+            this.btnSave.Size = new System.Drawing.Size(32, 32);
             this.btnSave.TabIndex = 2;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -84,7 +85,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(640, 43);
+            this.panel1.Size = new System.Drawing.Size(782, 43);
             this.panel1.TabIndex = 4;
             // 
             // label2
@@ -105,7 +106,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 43);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(640, 72);
+            this.panel2.Size = new System.Drawing.Size(782, 72);
             this.panel2.TabIndex = 5;
             // 
             // panel3
@@ -114,7 +115,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 115);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(640, 209);
+            this.panel3.Size = new System.Drawing.Size(782, 209);
             this.panel3.TabIndex = 6;
             // 
             // dgvGroup
@@ -132,7 +133,7 @@
             this.dgvGroup.ReadOnly = true;
             this.dgvGroup.RowHeadersVisible = false;
             this.dgvGroup.RowTemplate.Height = 50;
-            this.dgvGroup.Size = new System.Drawing.Size(640, 209);
+            this.dgvGroup.Size = new System.Drawing.Size(782, 209);
             this.dgvGroup.TabIndex = 4;
             this.dgvGroup.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGroup_CellClick);
             // 
@@ -146,7 +147,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ctrlGroup";
-            this.Size = new System.Drawing.Size(640, 324);
+            this.Size = new System.Drawing.Size(782, 324);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

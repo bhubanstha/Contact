@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows.Forms;
 using Contact.CRUD;
+using Contact.Model;
 
 namespace Contact.UserControls
 {
@@ -11,22 +12,17 @@ namespace Contact.UserControls
         UserCrud uc = new UserCrud();
         public ctrlMyProfile()
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         protected override void OnLoad(EventArgs e)
         {
             ControlAdder ctrl = ControlAdder.Instance;
-            DataTable tbl = uc.GetUser(ctrl.UserName);
-            if (tbl.Rows.Count > 0)
-            {
-                lblName.Text = tbl.Rows[0]["Name"].ToString();
-                lblEmail.Text = tbl.Rows[0]["Email"].ToString();
-                lblMobile.Text = tbl.Rows[0]["Mobile"].ToString();
-                lblMobile2.Text = tbl.Rows[0]["Mobile1"].ToString();
-                lblAddress.Text = tbl.Rows[0]["Address"].ToString();
-                lblBirthday.Text = tbl.Rows[0]["Birthday"].ToString();
-            }
+            lblName.Text = User.Name;
+            lblEmail.Text = User.Email;
+            lblMobile.Text = User.Mobile + ", " + User.Mobile1;
+            lblAddress.Text = User.Address;
+            lblBirthday.Text = User.Birthday.ToString("dd MMM yyyy");
             base.OnLoad(e);
         }
 

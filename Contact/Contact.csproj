@@ -52,6 +52,10 @@
     <ApplicationIcon>contact.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Animator, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Animator.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -109,12 +113,6 @@
     <Compile Include="CRUD\GroupCRUD.cs" />
     <Compile Include="CRUD\PersonCrud.cs" />
     <Compile Include="CRUD\UserCrud.cs" />
-    <Compile Include="frmLoading.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLoading.Designer.cs">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +130,12 @@
     </Compile>
     <Compile Include="frmGMap.Designer.cs">
       <DependentUpon>frmGMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Link.cs" />
     <Compile Include="Program.cs" />
@@ -178,9 +182,6 @@
     <Compile Include="UserControls\ctrlPersonProfile.Designer.cs">
       <DependentUpon>ctrlPersonProfile.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frmLoading.resx">
-      <DependentUpon>frmLoading.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGMap.resx">
       <DependentUpon>frmGMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResetPassword.resx">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -351,6 +355,8 @@
     <Content Include="Profile\EE306F1B79D542BF9A58F6BAFDC1F556.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\user-black.png" />
+    <None Include="Resources\2bbujtW__400x400.jpg" />
     <None Include="Resources\profile.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\whiteBG.png" />

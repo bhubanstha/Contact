@@ -48,22 +48,22 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(599, 43);
+            this.panel1.Size = new System.Drawing.Size(782, 43);
             this.panel1.TabIndex = 0;
             // 
             // btnSave
             // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnSave.BackgroundImage = global::Contact.Properties.Resources.save;
             this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSave.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(551, 0);
+            this.btnSave.Location = new System.Drawing.Point(745, 5);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(48, 43);
+            this.btnSave.Size = new System.Drawing.Size(32, 32);
             this.btnSave.TabIndex = 1;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -89,7 +89,7 @@
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(0, 43);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(599, 244);
+            this.panel2.Size = new System.Drawing.Size(782, 438);
             this.panel2.TabIndex = 1;
             // 
             // txtConPwd
@@ -99,7 +99,7 @@
             this.txtConPwd.Location = new System.Drawing.Point(165, 54);
             this.txtConPwd.Name = "txtConPwd";
             this.txtConPwd.PasswordChar = '*';
-            this.txtConPwd.Size = new System.Drawing.Size(413, 29);
+            this.txtConPwd.Size = new System.Drawing.Size(596, 29);
             this.txtConPwd.TabIndex = 3;
             // 
             // label3
@@ -118,7 +118,7 @@
             this.txtPwd.Location = new System.Drawing.Point(165, 19);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.PasswordChar = '*';
-            this.txtPwd.Size = new System.Drawing.Size(413, 29);
+            this.txtPwd.Size = new System.Drawing.Size(596, 29);
             this.txtPwd.TabIndex = 1;
             // 
             // label2
@@ -137,7 +137,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ctrlChangePassword";
-            this.Size = new System.Drawing.Size(599, 287);
+            this.Size = new System.Drawing.Size(782, 481);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
