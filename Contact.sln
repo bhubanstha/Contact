@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact", "Contact\Contact.csproj", "{30091C84-BB3D-442C-857C-BF26D3B616F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win.carousel", "Win.carousel\Win.carousel.csproj", "{2A2D2D47-5F2C-4CB6-B0C4-E54B28A56196}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Model", "Contact.Model\Contact.Model.csproj", "{26A6692B-12F0-4601-9972-9C7BE58DE8CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Winform", "Winform", "{856CF0F0-C0B3-4FF2-AE50-5A88EB38C923}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{66C9BCE1-6285-4572-A1DF-789A70CF6C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactMVC", "ContactMVC\ContactMVC.csproj", "{FB14EADF-3952-4044-9DD5-5A8BB9A88421}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +33,20 @@ Global
 		{26A6692B-12F0-4601-9972-9C7BE58DE8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A6692B-12F0-4601-9972-9C7BE58DE8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A6692B-12F0-4601-9972-9C7BE58DE8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB14EADF-3952-4044-9DD5-5A8BB9A88421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB14EADF-3952-4044-9DD5-5A8BB9A88421}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB14EADF-3952-4044-9DD5-5A8BB9A88421}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB14EADF-3952-4044-9DD5-5A8BB9A88421}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30091C84-BB3D-442C-857C-BF26D3B616F6} = {856CF0F0-C0B3-4FF2-AE50-5A88EB38C923}
+		{2A2D2D47-5F2C-4CB6-B0C4-E54B28A56196} = {856CF0F0-C0B3-4FF2-AE50-5A88EB38C923}
+		{FB14EADF-3952-4044-9DD5-5A8BB9A88421} = {66C9BCE1-6285-4572-A1DF-789A70CF6C1E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C6E6CA4-0252-41CE-8109-4BE1A0D5FF4C}
 	EndGlobalSection
 EndGlobal

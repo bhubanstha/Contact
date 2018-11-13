@@ -1,0 +1,36 @@
+﻿.carousel-inner
+{
+    max-height: 600px;
+}
+
+#page-wrapper {
+    padding-bottom: 10px;
+}
+
+#wrapper, .navbar-default {
+    background-color: #292929;
+}
+
+a{
+    color: #fff;
+}
+.navbar-default .navbar-brand{
+    color: #fff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    text-decoration: none;
+    background-color: #a90303;
+    color: #fff;
+}
+
+li.active {
+    text-decoration: none;
+    background-color: #a90303;
+    color: #fff;
+}
+
+.sidebar-search{
+    width: 200px;
+    top:10px;
+}
