@@ -31,7 +31,7 @@ namespace ContactMVC
                       "~/Content/sb-admin-2.min.css",
                       "~/Content/morris.css",
                       "~/Content/font-awesome/css/font-awesome.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }
