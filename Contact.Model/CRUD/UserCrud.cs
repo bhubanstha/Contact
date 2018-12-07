@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 
 namespace Contact.CRUD
 {
-    class UserCrud
+    public class UserCrud
     {
         public int ChangePassword(string password, string userName)
         {

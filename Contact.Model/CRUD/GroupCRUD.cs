@@ -5,7 +5,7 @@ using System.Data;
 
 namespace Contact.CRUD
 {
-    class GroupCRUD
+    public class GroupCRUD
     {
         public int Add(Group g)
         {
