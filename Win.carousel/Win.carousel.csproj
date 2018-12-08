@@ -94,6 +94,7 @@
     <None Include="Resources\Tulips.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Animator.dll" />
     <Content Include="contact.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

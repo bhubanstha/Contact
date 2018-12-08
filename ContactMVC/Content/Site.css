@@ -40,8 +40,8 @@ a.menu{
   float: left;
   transition: 0.3s;
   margin: 10px;
-  max-height: 405px;
-  height: 405px;
+  max-height: 350px;
+  height: 350px;
   padding: 0;
   margin-bottom: 15px;
   background-color: #f5f5f5;
@@ -77,6 +77,8 @@ width: 100%;
 }
 span.summary{
 margin-left: 15px;
+font-style: normal;
+font-weight: normal;
 }
 .delete-contact
 {
@@ -99,5 +101,12 @@ text-align:left !important;
 padding-top: 0 !important;
 }
 .form-horizontal .form-group{
-margin-bottom: 5px !important;;
+margin-bottom: 5px !important;
+}
+label.info{
+line-height: 20px;
+padding-right:0;
+}
+.sidebar{
+margin-top: 59px;
 }

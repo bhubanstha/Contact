@@ -1,0 +1,58 @@
+﻿@using System.Data
+@model IEnumerable<DataRow>
+
+@{
+  ViewBag.Title = "Search";
+}
+
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Contacts</h1>
+  </div>
+  <div class="col-lg-12">
+    @foreach (DataRow row in Model)
+    {
+      <div class="card col-lg-3">
+        @{
+          string image = row["ProfileImage"].ToString();
+          string path = Server.MapPath("~\\Content\\Images\\Profile\\" + image);
+          if (!File.Exists(path))
+          {
+            path = @"\Content\Images\Profile\EE306F1B79D542BF9A58F6BAFDC1F556.jpg";
+          }
+          else
+          {
+            path = @"\Content\Images\Profile\" + image;
+          }
+        }
+        <span class="fa fa-close pull-right delete-contact" data-id="@row["id"]"></span>
+        <form method="post" action="/contact/delete/@row["id"]" class="hidden">
+          <input type="submit" class="hidden" id="btnDelete_@row["id"]" />
+        </form>
+        <img class="card-img-top" src="@path" alt="Card image cap">
+        <div class="card-container">
+          <h4 class="center-block"><b>@row["FullName"]</b></h4>
+          <label class="control-label col-lg-12 info"><span class="fa fa-envelope"></span><span class="summary">@row["PrimaryEmail"]</span></label>
+          <label class="control-label col-lg-12 info"><span class="fa fa-phone">&nbsp;</span><span class="summary">@row["Mobile1"]</span></label>
+          <label class="control-label col-lg-12 info"><span class="fa fa-map-marker">&nbsp;</span><span class="summary">@row["Address"]</span></label>
+        </div>
+        <a href="/contact/detail/@row["id"]" class="btn btn-success view-detail">View Detail</a>
+      </div>
+    }
+
+  </div>
+</div>
+
+@section scripts
+{
+  <script>
+    $(document).ready(function () {
+      $(".delete-contact").on('click', function () {
+        var id = $(this).attr("data-id");
+        var submitId = "btnDelete_" + id;
+        $("#" + submitId).trigger("click");
+      });
+    });
+  </script>
+}
+
