@@ -1,0 +1,30 @@
+﻿
+@model Contact.Model.User
+@{
+    ViewBag.Title = "Profile";
+}
+
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Profile</h1>
+  </div>
+  <div class="col-lg-12">
+    <div class="col-lg-3">
+      <img class="img-thumbnail" src="\Content\Images\Profile\Me.jpg" alt="Profile">
+    </div>
+    <div class="col-lg-9">
+      <div class="col-lg-6">
+        <label class="control-label col-lg-12"><span class="fa fa-user"></span> <span class="summary">Name : @Contact.Model.User.Name </span></label>
+        <label class="control-label col-lg-12"><span class="fa fa-envelope"></span> <span class="summary">Email : @Contact.Model.User.Email</span></label>
+        <label class="control-label col-lg-12"><span class="fa fa-phone"></span><span class="summary">Mobile : @Contact.Model.User.Mobile , @Contact.Model.User.Mobile1</span></label>
+      </div>
+      <div class="col-lg-6">
+        <label class="control-label col-lg-12"><span class="fa fa-map-marker"></span><span class="summary">Address :@Contact.Model.User.Address</span></label>
+        <label class="control-label col-lg-12">&nbsp;</label>
+        <label class="control-label col-lg-12"><span class="fa fa-calendar"></span><span class="summary">Birthday : @Contact.Model.User.Birthday.ToString("dd/MMM/yyyy")</span></label>
+      </div>
+
+      
+    </div>
+  </div>
+</div>

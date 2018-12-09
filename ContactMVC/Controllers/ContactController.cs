@@ -11,6 +11,7 @@ namespace ContactMVC.Controllers
   public class ContactController : Controller
   {
     // GET: Contacts
+    [IsAuthenticated]
     public ActionResult Index()
     {
 
@@ -20,6 +21,7 @@ namespace ContactMVC.Controllers
     }
 
     [HttpPost]
+    [IsAuthenticated]
     public ActionResult Delete(int id)
     {
       PersonCrud personCrud = new PersonCrud();
@@ -28,6 +30,7 @@ namespace ContactMVC.Controllers
     }
 
     [HttpGet]
+    [IsAuthenticated]
     public ActionResult Detail(int id)
     {
       PersonCrud personCrud = new PersonCrud();
@@ -36,12 +39,14 @@ namespace ContactMVC.Controllers
     }
 
     [HttpGet]
+    [IsAuthenticated]
     public ActionResult Add()
     {
       return View(new ContactMVC.Models.ContactPerson());
     }
 
     [HttpPost]
+    [IsAuthenticated]
     public ActionResult Add(ContactMVC.Models.ContactPerson person)
     {
       if (ModelState.IsValid)
@@ -56,6 +61,7 @@ namespace ContactMVC.Controllers
     }
 
     [HttpGet]
+    [IsAuthenticated]
     public ActionResult Edit(int id)
     {
       PersonCrud personCrud = new PersonCrud();
@@ -65,6 +71,7 @@ namespace ContactMVC.Controllers
     }
 
     [HttpPost]
+    [IsAuthenticated]
     public ActionResult Edit(Models.ContactPerson person)
     {
       if(ModelState.IsValid)
@@ -79,6 +86,7 @@ namespace ContactMVC.Controllers
     }
 
     [HttpGet]
+    [IsAuthenticated]
     public ActionResult Search(string q)
     {
       PersonCrud personCrud = new PersonCrud();

@@ -12,7 +12,7 @@ namespace ContactMVC
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/metisMenu.min.js",
-                        "~/Scripts/sb-admin-2.min.js"));
+                        "~/Scripts/sb-admin-2.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

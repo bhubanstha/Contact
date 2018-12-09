@@ -1,21 +1,21 @@
-﻿.carousel-inner
-{
-    max-height: 600px;
+﻿.carousel-inner {
+  max-height: 600px;
 }
 
 #page-wrapper {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 #wrapper, .navbar-default {
-    background-color: #292929;
+  background-color: #292929;
 }
 
-a.menu{
-    color: #fff;
+a.menu {
+  color: #fff;
 }
-.navbar-default .navbar-brand{
-    color: #fff;
+
+.navbar-default .navbar-brand {
+  color: #fff;
 }
 
 .navbar .nav > li > a:hover, .navbar .nav > li > a:focus, .nav .open > a, .navbar .nav .open > a:hover, .navbar .nav .open > a:focus {
@@ -25,15 +25,16 @@ a.menu{
 }
 
 .navbar li.active {
-    text-decoration: none;
-    background-color: #a90303;
-    color: #fff;
+  text-decoration: none;
+  background-color: #a90303;
+  color: #fff;
 }
 
-.sidebar-search{
-    width: 200px;
-    top:10px;
+.sidebar-search {
+  width: 200px;
+  top: 10px;
 }
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -46,17 +47,18 @@ a.menu{
   margin-bottom: 15px;
   background-color: #f5f5f5;
 }
-.card:nth-child(1), .card:nth-child(n+2), .card:nth-child(n+3), .card:nth-child(n+4)
-{
-margin-left:0;
-}
 
-.card img{
-max-width: 100%;
-width: 100%;
-}
-  .card.col-lg-4{
-  padding:0;
+  .card:nth-child(1), .card:nth-child(n+2), .card:nth-child(n+3), .card:nth-child(n+4) {
+    margin-left: 0;
+  }
+
+  .card img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card.col-lg-4 {
+    padding: 0;
   }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -68,45 +70,56 @@ width: 100%;
   padding: 2px 16px;
 }
 
-.info{
-padding-left: 0;
+.info {
+  padding-left: 0;
 }
 
-.view-detail{
-width: 100%;
+.view-detail {
+  width: 100%;
 }
-span.summary{
-margin-left: 15px;
-font-style: normal;
-font-weight: normal;
+
+span.summary {
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: normal;
 }
-.delete-contact
-{
-  font-size:20pt;
-  padding:5px;
-  position:absolute;
-  display:inline;
-  right:0;
+
+.delete-contact {
+  font-size: 20pt;
+  padding: 5px;
+  position: absolute;
+  display: inline;
+  right: 0;
 }
-.delete-contact:hover{
-background-color:#a90303;
-color: #fff;
+
+  .delete-contact:hover {
+    background-color: #a90303;
+    color: #fff;
+  }
+
+div.clearfix {
+  height: 10px;
 }
-div.clearfix{
-height:10px;
+
+.control-label {
+  line-height: 34px;
+  text-align: left !important;
+  padding-top: 0 !important;
 }
-.control-label{
-line-height: 34px;
-text-align:left !important;
-padding-top: 0 !important;
+
+.form-horizontal .form-group {
+  margin-bottom: 5px !important;
 }
-.form-horizontal .form-group{
-margin-bottom: 5px !important;
+
+label.info {
+  line-height: 20px;
+  padding-right: 0;
 }
-label.info{
-line-height: 20px;
-padding-right:0;
+
+.sidebar {
+  margin-top: 59px;
 }
-.sidebar{
-margin-top: 59px;
+
+.error-message {
+  color: #d91a1a;
 }

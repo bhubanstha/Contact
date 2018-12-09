@@ -4,6 +4,7 @@ using Contact.CRUD;
 
 namespace ContactMVC.Controllers
 {
+  [IsAuthenticated]
   public class GroupController : Controller
   {
     // GET: Group
